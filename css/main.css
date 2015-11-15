@@ -104,6 +104,16 @@ html {
   box-sizing: inherit;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visted {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Navigation */
 
 .page-header {
@@ -130,11 +140,11 @@ html {
 /* Jumbotron */
 
 .jumbotron {
-    clear: both;
+    clear: bothf;
     padding: 0;
     position: relative;
     overflow: hidden;
-    max-height: 30em;
+    max-height: 35em;
     color: white;
 }
 
@@ -160,14 +170,19 @@ html {
 
 .jumbotron .call-to-action {
     display: inline-block;
-    color: white;
+    color: #fff;
     border: 0.125em solid white;
     font-size: 1.5em;
     padding: 0.5em 1em;
     text-decoration: none;
 }
 
-/* Article */
+.jumbotron .call-to-action:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Section */
 
 .about {
     border-bottom: .1em solid #e5e5e5;
@@ -179,7 +194,7 @@ html {
     line-height: 1.5em;
 }
 
-/* Section */
+/* Image List */
 
 .image-list {
     padding: 1.5em;
@@ -200,10 +215,12 @@ html {
 
 .image-list img{
     max-width: 100%;
+    background-color: #fff;
+    opacity: .4;
 }
 
 .image-list figcaption{
-    color: #fff;
+    color: #000;
     font-size: 1.5em;
     font-weight: bold;    
     top: 50%;
@@ -212,6 +229,12 @@ html {
     position: absolute;
     text-align: center;
     width: 100%;
+}
+
+.image-list img:hover {
+    background-color: none;
+    opacity: 1;
+    color: #fff;
 }
 
 /* Footer */
