@@ -110,22 +110,27 @@ html {
     background-color: #000;
     color: #fff;
     padding: 1em;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
 }
 
 .page-header h1 {
     font-size: 1.5em;
     margin: 0;
     text-transform: uppercase;
+    float: left;
 }
 
 .page-header i {
+    font-size: 1.5em;
     float: right;
 }
 
 /* Jumbotron */
 
 .jumbotron {
-    clear: right;
+    clear: both;
     padding: 0;
     position: relative;
     overflow: hidden;
@@ -190,10 +195,23 @@ html {
     margin-right: .5%;
     margin-bottom: .5%;
     float: left;
+    position: relative;
 }
 
 .image-list img{
     max-width: 100%;
+}
+
+.image-list figcaption{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 
 /* Footer */
@@ -202,7 +220,7 @@ html {
     clear: both;
     border-top: .1em solid #e5e5e5;
     text-align: center;
-    font-size: 1.5em;    
+    font-size: 1.5em;
 }
 
 
