@@ -104,14 +104,12 @@ html {
   box-sizing: inherit;
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
 a:visted {
     text-decoration: none;
-    color: #fff;
+}
+
+a { 
+    text-decoration: none;
 }
 
 /* Navigation */
@@ -140,7 +138,7 @@ a:visted {
 /* Jumbotron */
 
 .jumbotron {
-    clear: bothf;
+    clear: both;
     padding: 0;
     position: relative;
     overflow: hidden;
@@ -177,9 +175,16 @@ a:visted {
     text-decoration: none;
 }
 
+.jumbotron a {
+    color: #fff;
+}
+
+.jumbotron a:hover{
+    color: #000;
+}
+
 .jumbotron .call-to-action:hover {
     background-color: #fff;
-    color: #000;
 }
 
 /* Section */
@@ -231,11 +236,20 @@ a:visted {
     width: 100%;
 }
 
+.image-list figcaption:hover {
+    color:#fff;
+}
+
 .image-list img:hover {
     background-color: none;
-    opacity: 1;
     color: #fff;
+    opacity: 1;
 }
+
+.image-list a:visited {
+    color:#000;
+}
+
 
 /* Footer */
 
@@ -245,19 +259,6 @@ a:visted {
     text-align: center;
     font-size: 1.5em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
