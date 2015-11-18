@@ -104,15 +104,18 @@ html {
   box-sizing: inherit;
 }
 
-a:visted {
-    text-decoration: none;
+body {
+    padding-top: 3em;
 }
 
-a { 
-    text-decoration: none;
+h1, h2, h3, h4, h5 {
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
-/* Navigation */
+img {
+    max-width: 100%
+}
 
 .page-header {
     background-color: #000;
@@ -120,149 +123,121 @@ a {
     padding: 1em;
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 10;
 }
 
 .page-header h1 {
     font-size: 1.5em;
     margin: 0;
-    text-transform: uppercase;
-    float: left;
 }
 
-.page-header i {
-    font-size: 1.5em;
-    float: right;
+.page-header .main-nav {
+    position: absolute;
+    top: 1em;
+    right: 1em;
 }
-
-/* Jumbotron */
 
 .jumbotron {
-    clear: both;
     padding: 0;
     position: relative;
-    overflow: hidden;
-    max-height: 35em;
-    color: white;
 }
 
-.jumbotron .background {
+.jumbotron_bg {
     display: block;
     width: 100%;
     position: relative;
     z-index: -10;
 }
 
-.jumbotron .content {
+.jumbotron_content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.jumbotron h1 {
-    font-size: 4em;
     line-height: 1;
-}
-
-.jumbotron .call-to-action {
-    display: inline-block;
-    color: #fff;
-    border: 0.125em solid white;
-    font-size: 1.5em;
-    padding: 0.5em 1em;
-    text-decoration: none;
-}
-
-.jumbotron a {
+    z-index: 10;
     color: #fff;
 }
 
-.jumbotron a:hover{
+.jumbotron_content h2 {
+    font-size: 3em;
+    margin-top: 0;
+}
+
+.jumbotron_content .btn {
+    color:#fff;
+    border-color: #fff;
+}
+
+.jumbotron_content .btn:hover{
+    background-color: #fff;
     color: #000;
 }
 
-.jumbotron .call-to-action:hover {
-    background-color: #fff;
+.page-section {
+    padding-top: 1em;
+    border-bottom: 1px solid #ddd;
 }
-
-/* Section */
 
 .about {
-    border-bottom: .1em solid #e5e5e5;
-    padding: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
 }
 
-.about p {
-    font-size: 1.3em;
-    line-height: 1.5em;
+.btn {
+    font-size: 1.25em;
+    border: .125em solid #000;
+    padding: .75em 1em;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
 }
 
-/* Image List */
+.btn:hover{
+    background: #000;
+    color: #fff;
 
-.image-list {
-    padding: 1.5em;
 }
 
-.image-list ul{
-    list-style: none;
-    padding: 0;
-}
-
-.image-list li {
-    width: 49.5%;
-    margin-right: .5%;
-    margin-bottom: .5%;
+.project-thumb {
+    width: 50%;
     float: left;
+    background-color: hsla(0,100%,100%, .75);
+    border: 1px solid white;
     position: relative;
 }
 
-.image-list img{
-    max-width: 100%;
-    background-color: #fff;
-    opacity: .4;
+.project-thumb img {
+    position: relative;
+    z-index: -10;
 }
 
-.image-list figcaption{
-    color: #000;
-    font-size: 1.5em;
-    font-weight: bold;    
+.project-thumb h3 {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
+    margin: 0;
     text-align: center;
-    width: 100%;
+    color: #000;
 }
 
-.image-list figcaption:hover {
-    color:#fff;
+.project-thumb:hover {
+    background-color: hsla(0, 0%, 0%, .5)
 }
 
-.image-list img:hover {
-    background-color: none;
+.project-thumb:hover h3{
     color: #fff;
-    opacity: 1;
 }
 
-.image-list a:visited {
-    color:#000;
-}
-
-.image-list a {
-    color:#000;
-}
-
-
-/* Footer */
-
-.copyright {
-    clear: both;
-    border-top: .1em solid #e5e5e5;
+.page-footer {
     text-align: center;
-    font-size: 1.5em;
 }
+
 
 /* ==========================================================================
    Helper classes
